@@ -1,0 +1,64 @@
+@media (max-width: 1200px){ /*Alterando para telas menores que 1200px*/
+    body{
+        background-color: #f44336;
+    }
+
+    .fundo-video{
+        display: none;
+    }
+
+    .container{
+        flex-wrap: wrap; /*se nao tem espaço na tela, joga os elementos um para baixo do outro*/
+        justify-content: center;
+        height: auto; /*tira a altura que fez com o calc no style.css, agora a altura fica automática*/
+        gap: 30px;
+    }
+
+    .container .mario{
+        max-width: 50%;
+    }
+
+    .container .informacoes{
+        display: flex;
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    .container .descricao{
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .container .botao-trailer{
+        background-color: #263238;
+    }
+}
+
+@media (max-width: 500px){ /* */
+    .cabecalho{
+        flex-wrap: wrap; /*quebra o menu para baixo*/
+        justify-content: center;
+        gap: 10px; /*espaço entre a logo e os itens do menu*/
+    }
+
+    .container .imagem-titulo{
+        max-width: 75%;
+    }
+
+    .modal .fechar-moodal{
+        width: 30px;
+        line-height: 30px;
+    }
+
+    .modal #video{
+        width: 300px;
+        height: 169px;
+    }
+}
+
+@media (max-width: 376px){
+    .modal #video{
+        width: 250px;
+        height: 140px;
+    }
+}
